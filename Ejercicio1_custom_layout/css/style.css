@@ -5,8 +5,6 @@
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-weight: bolder;
-  font-size: 18pt;
 }
 
 /* Ajuste para usar toda la pantalla */
@@ -27,6 +25,8 @@ todos los textos dentro de un [p] */
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  font-weight: bolder;
+  font-size: 36px;
 }
 
 /* Estilo del [header] */
@@ -69,7 +69,7 @@ aside {
 }
 
 /* Posicion de los [item#] en el 
- grid en modo desktop */
+grid en modo desktop */
 .item1{
   grid-area: 1/1/2/3;
 }
@@ -96,7 +96,7 @@ footer {
 /* Discriminante para activar el modo movil
 cuando la pantalla es menos a 600px de ancho */
 @media only screen and (max-width: 600px) {
-  
+    
   /* Mover el [aside] sobre el [grid]
   en el modo movil haciendo que el [aside]
   tenga una anchura de 100% */ 
@@ -112,13 +112,10 @@ cuando la pantalla es menos a 600px de ancho */
   }  
 
   /* Cambia el tamaño de la fuente de los
-  [item#] en modo movil - no funciona,
-  el navegador aplica el cambio al inspeccionar
-  elemento pero no se refleja en la pantalla,
-  probado en Chromium y FireFox Dev*/ 
-  [class*="item"]{
+  [item#] en modo movil */
+  .center p {
     font-weight: normal;
-    font-size: 5pt;
+    font-size: 24px;
   }
 
   /* Posicion de los [item#] en el */
