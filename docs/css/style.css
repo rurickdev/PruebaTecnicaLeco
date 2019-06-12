@@ -5,17 +5,16 @@
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-weight: bolder;
 }
 
-/* Para usar toda la pantalla */
+/* Ajuste para usar toda la pantalla */
 html, body {
   height: 100%;
   margin: 0;
 }
 
 /* Ajuste para centrar vertical y horizontal 
-todos los textos dentro de [p] */
+todos los textos dentro de un [p] */
 .center { 
   position: relative;
 }
@@ -26,10 +25,12 @@ todos los textos dentro de [p] */
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  font-weight: bolder;
+  font-size: 36px;
 }
 
 /* Estilo del [header] */
-.header {
+header {
   background-color: #073763;
   color: #ffffff;
   height: 8%;
@@ -42,7 +43,7 @@ use toda la pantalla */
 }
 
 /* Estilo del [aside] */
-.aside {
+aside {
   background-color: #274E13;
   color: #ffffff;
   float: left;
@@ -61,21 +62,14 @@ use toda la pantalla */
   background-color: #B7B7B7;
 }
 
-/* Estilo de los [item] */
-.box{
+/* Estilo general de los [item#] */
+[class*="item"]{
   background-color: #2E2E2E;
   color: #FFFFFF;
 }
 
-/* Estilo del [footer] */
-.footer {
-  background-color: #660000;
-  color: #ffffff;
-  height: 8%;
-}
-
-/* Posicion de los [item] en el 
- grid en modo desktop */
+/* Posicion de los [item#] en el 
+grid en modo desktop */
 .item1{
   grid-area: 1/1/2/3;
 }
@@ -92,28 +86,39 @@ use toda la pantalla */
   grid-area: 4/2/3/4;
 }
 
+/* Estilo del [footer] */
+footer {
+  background-color: #660000;
+  color: #ffffff;
+  height: 8%;
+}
+
 /* Discriminante para activar el modo movil
 cuando la pantalla es menos a 600px de ancho */
 @media only screen and (max-width: 600px) {
+    
+  /* Mover el [aside] sobre el [grid]
+  en el modo movil haciendo que el [aside]
+  tenga una anchura de 100% */ 
+  aside{
+    width: 100%;
+    height: 10%;
+  }
 
   /* Ajustar el grid en modo movil */
   .grid-container{
     grid-template-columns: repeat(4, 1fr);
     height: 90%;
-  }
+  }  
 
-  /* Mover el [aside] debejo del [header]
-  en el modo movil */ 
-  .aside{
-    width: 100%;
-    height: 10%;
-  }
-
-  .box{
+  /* Cambia el tamaño de la fuente de los
+  [item#] en modo movil */
+  .center p {
     font-weight: normal;
+    font-size: 24px;
   }
 
-  /* Posicion de los [item] en el */
+  /* Posicion de los [item#] en el */
   /* grid en modo movil */
   .item1{
     grid-area: 1/2/2/5;
