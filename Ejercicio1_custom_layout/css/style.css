@@ -1,0 +1,47 @@
+/** {
+  box-sizing: border-box;
+}*/
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.header {
+  background-color: #073763;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+.aside {
+  background-color: #274E13;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #660000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+}
+
+/* Para escritorio: */
+.col-1 {width: 25%;}
+.col-2 {width: 75%;}
+
+@media only screen and (max-width: 600px) {
+  /* Para movil: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
