@@ -1,33 +1,60 @@
+/* Fuente Roboto de Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Estilos Globales */
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
 }
 
+/* Para usar toda la pantalla */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Ajuste para centrar vertical y horizontal 
+todos los textos dentro de [p] */
+.center { 
+  position: relative;
+}
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Estilo del [header] */
 .header {
   background-color: #073763;
   color: #ffffff;
-  text-align: center;
-  height: 50px;
+  height: 8%;
+  /* font-size: 18pt; */
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
+/* Ajuste de la clase [cuerpo] para que 
+use toda la pantalla */
+.cuerpo{
+  height: 84%;
 }
 
+/* Estilo del [aside] */
 .aside {
   background-color: #274E13;
   color: #ffffff;
-  text-align: center;
   float: left;
-  height: 350px;
+  height: 100%;
   width: 25%;
+  /* font-size: 18pt; */
 }
 
+/* Propiedades del [grid] */
 .grid-container{
-  height: 350px;
+  height: 100%;
   display: grid;
   grid-gap: 10px;
   padding: 10px;
@@ -36,20 +63,21 @@
   background-color: #B7B7B7;
 }
 
+/* Estilo de los [item] */
 .box{
   background-color: #2E2E2E;
   color: #FFFFFF;
-  text-align: center;
 }
 
+/* Estilo del [footer] */
 .footer {
   background-color: #660000;
   color: #ffffff;
-  text-align: center;
-  height: 50px;
+  height: 8%;
 }
 
-/* Para Escritorio*/
+/* Posicion de los [item] en el 
+ grid en modo desktop */
 .item1{
   grid-area: 1/1/2/3;
 }
@@ -66,18 +94,29 @@
   grid-area: 4/2/3/4;
 }
 
-/* Para movil: */
+/* Discriminante para activar el modo movil
+cuando la pantalla es menos a 600px de ancho */
 @media only screen and (max-width: 600px) {
 
+  /* Ajustar el grid en modo movil */
   .grid-container{
     grid-template-columns: repeat(4, 1fr);
+    height: 90%;
   }
 
+  /* Mover el [aside] debejo del [header]
+  en el modo movil */ 
   .aside{
     width: 100%;
-    height: 50px;
+    height: 10%;
   }
 
+  .box{
+    font-weight: lighter;
+  }
+
+  /* Posicion de los [item] en el */
+  /* grid en modo movil */
   .item1{
     grid-area: 1/2/2/5;
   }
