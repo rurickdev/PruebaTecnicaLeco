@@ -33,7 +33,6 @@ todos los textos dentro de [p] */
   background-color: #073763;
   color: #ffffff;
   height: 8%;
-  /* font-size: 18pt; */
 }
 
 /* Ajuste de la clase [cuerpo] para que 
@@ -49,7 +48,6 @@ use toda la pantalla */
   float: left;
   height: 100%;
   width: 25%;
-  /* font-size: 18pt; */
 }
 
 /* Propiedades del [grid] */
@@ -112,7 +110,7 @@ cuando la pantalla es menos a 600px de ancho */
   }
 
   .box{
-    font-weight: lighter;
+    font-weight: normal;
   }
 
   /* Posicion de los [item] en el */
