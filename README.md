@@ -8,9 +8,9 @@ El codigo se encuentra en la carpeta [_Ejercicio1_](https://github.com/skintigth
 
 El resultado que se obtuvo fue el sigiente:
 
-| ### Desktop                                                                                                                                   | ### Movil                                                                                                                               |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| ### Desktop ![Version Desktop con width mayor a 600 px](https://github.com/skintigth/PruebaTecnicaLeco/blob/master/docs/previews/desktop.png) | ### Movil ![Version Movil con width menor a 600 px](https://github.com/skintigth/PruebaTecnicaLeco/blob/master/docs/previews/movil.png) |
+| Desktop                                                                                                                           | Movil                                                                                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| ![Version Desktop con width mayor a 600 px](https://github.com/skintigth/PruebaTecnicaLeco/blob/master/docs/previews/desktop.png) | ![Version Movil con width menor a 600 px](https://github.com/skintigth/PruebaTecnicaLeco/blob/master/docs/previews/movil.png) |
 
 [Se puede acceder a una version funcional con github pages](https://skintigth.github.io/PruebaTecnicaLeco/)
 
