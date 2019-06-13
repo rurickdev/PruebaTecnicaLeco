@@ -51,5 +51,14 @@ El codigo se encunetra en la carpeta nombrada [_Ejercicio2_](https://github.com/
 
 Y el metodo consiste basicamente en recorrer la matriz una sola vez sumando los valores de las respectivas diagonales y retornando directamente el valor absoluto de la resta de dichas sumas.
 
+___
 
+## Ejercicio 3
+### Elaborar una funcion recursiva que transforme todas las _llaves_ de un objeto a [_lowerCamelCase_](http://wiki.c2.com/?LowerCamelCase) pudiendo usar la [funcion camelCase() de Lodash](https://lodash.com/docs/4.17.11#camelCase)
+
+El programa se elaboro usando NodeJs y utilizando la funcion _camelCase()_ antes mencionada
+
+| Objeto Original                                                                                                           | Objeto Modificado                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| ![Objeto Original - Entrada](https://github.com/skintigth/PruebaTecnicaLeco/blob/master/docs/previews/objeto_entrada.png) | ![Objeto Modificado - Salida](https://github.com/skintigth/PruebaTecnicaLeco/blob/master/docs/previews/objeto_salida.png) |
 
